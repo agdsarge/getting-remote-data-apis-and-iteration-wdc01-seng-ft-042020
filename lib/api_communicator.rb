@@ -19,10 +19,7 @@ def check_for_valid_input(character)
     end
 end
 
-
-
-def get_character_movies_from_api(response_char_hash )
-    #make the web request
+def get_character_movies_from_api(response_char_hash)
     film_url_array = response_char_hash["results"][0]["films"]
     film_array_of_hashes = film_url_array.map do |film|
         x = RestClient.get(film)
