@@ -25,8 +25,10 @@ def print_movies(films)
 end
 
 def show_character_movies(character)
-  films = get_character_movies_from_api(character)
-  print_movies(films)
+  # films = get_character_movies_from_api(character)
+  # print_movies(films)
+  puts "May the 4th be with you"
+  puts "My favorite character is #{character}"
 end
 
 ## BONUS
